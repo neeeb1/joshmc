@@ -1,20 +1,40 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
 #header_logo {
 	display: block;
 	margin: 0 auto;
 	height: 175px;
 	}
 
-#nav ul {
-	text-align: center;
+
+#nav {
+	height: 50px;
 	background-color: black;
 	margin: 0 auto;
+
+}
+#nav ul {
+	text-align: center;
+	position: relative;
+	padding: 0;
+	top: 20%;
+	margin: auto 0;
 	}
 
 #nav li {
 	list-style-type: none;
 	margin: none;
 	display: inline;
-	padding: 10px;
+	padding: 0 10px;
 	line-height:30px;
 	}
 	
@@ -49,14 +69,13 @@
 	}
 
 #slider{
-	height: 800px; width: 1000px;
+	height: 750; width: 750px;
 	margin: 30px auto;
 	overflow: hidden;
 }
 
 #slider img {
-	max-height: 1000px; max-width: 1000px;
-	float: left;
+	max-height: 750px; max-width: 750px;
 	display: none;
 	z-index: 0;
 }
@@ -65,8 +84,9 @@
 	height: 50px; width: 100%;
 	clear: both;
 	background: #f1f1f1;
-	margin: 30px 0 0;
-	display: flex;
+	position: fixed;
+	bottom: 0;
+	display: fixed;
 	align-items: center;
 }
 
@@ -84,7 +104,7 @@
 
 #spacer {
 	height: 207px; width: 100%;
-	top: 0;
+	margin-top: 30px;
 }
 
 #footer_logo {
